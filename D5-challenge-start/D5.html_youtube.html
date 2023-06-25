@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube - Web Prep</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+      body {
+        display: flex;
+        margin: 0;
+        height: 100vh;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .main {
+        width: 100%;
+      }
+
+      .topbar {
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .content {
+        height: 100%;
+      }
+
+      .icon {
+        height: 8vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2em;
+        cursor: pointer;
+      }
+
+      .icon ion-icon {
+        font-size: 2em;
+      }
+
+      .icon p {
+        margin: 0;
+      }
+
+      .icon:not(:first-of-type) {
+        height: 16vh;
+      }
+
+      .logo {
+        height: 50%;
+      }
+
+      .search-wrapper {
+        display: flex;
+        height: 50%;
+        width: 30%;
+      }
+
+      .search-wrapper input {
+        width: 100%;
+        padding: 0 1em;
+      }
+
+      .icons-wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      .top-icon {
+        font-size: 2em;
+        padding: 0 0.5em;
+      }
+
+      .mic-icon {
+        display: flex;
+        align-items: center;
+      }
+
+      .search-btn {
+        padding: 0 0.7em;
+        font-size: 1.3em;
+        display: flex;
+        align-items: center;
+      }
+      .thumb{
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  margin: 10px;
+  min-width: 250px;
+  cursor: pointer;
+}
+
+.bottom-thumb{
+  display: flex;
+  align-items: center;
+}
+
+.simbol{
+    margin: 0 5px;
+}
+
+.simbol img{
+    width: 55px;
+}
+
+.thumbnail img{
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.thumbnail{
+  display: flex;
+}
+
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 90%;
+}
+
+.description p{
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /*Nasconde il testo in eccesso con tre puntini di sospensione*/
+}
+
+.description{
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="icon">
+        <ion-icon name="menu-sharp"></ion-icon>
+      </div>
+      <div class="icon">
+        <ion-icon name="home-outline"></ion-icon>
+        <p>Home</p>
+      </div>
+      <div class="icon">
+        <ion-icon name="compass-outline"></ion-icon>
+        <p>Explore</p>
+      </div>
+      <div class="icon">
+        <ion-icon name="albums-outline"></ion-icon>
+        <p>Library</p>
+      </div>
+    </div>
+    <div class="main">
+      <div class="topbar">
+        <img class="logo" src="assets/yt-logo.svg" alt="yt-logo" />
+        <div class="search-wrapper">
+          <input type="text" placeholder="Search on YouTube" />
+          <button class="search-btn">
+            <ion-icon name="search"></ion-icon>
+          </button>
+          <div class="top-icon mic-icon">
+            <ion-icon name="mic-sharp"></ion-icon>
+          </div>
+        </div>
+        <div class="icons-wrapper">
+          <div class="top-icon">
+            <ion-icon name="videocam-outline"></ion-icon>
+          </div>
+          <div class="top-icon">
+            <ion-icon name="notifications-outline"></ion-icon>
+          </div>
+          <div class="top-icon">
+            <ion-icon name="person-circle-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="thumb">
+          <div class="thumbnail">
+            <img src="assets/epicode_thumb.png" alt="thumbnail"/>
+          </div>
+          <div class="bottom-thumb">
+            <div class="simbol">
+              <img src="assets/epicode-logo.png" alt="logo"/>
+            </div>
+            <div class="description">
+              <p style="font-weight: 700;">Tiltle</p>
+              <p>Description</p>
+            </div>
+          </div>
+        </div>
+        <div class="thumb">
+          <div class="thumbnail">
+            <img src="assets/epicode_thumb.png" alt="thumbnail">
+          </div>
+          <div class="bottom-thumb">
+            <div class="simbol">
+              <img src="assets/epicode-logo.png" alt="logo">
+            </div>
+            <div class="description">
+              <p style="font-weight: 700;">Tiltle</p>
+              <p>Description</p>
+            </div>
+          </div>
+        </div>
+        <div class="thumb">
+          <div class="thumbnail">
+            <img src="assets/epicode_thumb.png" alt="thumbnail">
+          </div>
+          <div class="bottom-thumb">
+            <div class="simbol">
+              <img src="assets/epicode-logo.png" alt="logo">
+            </div>
+            <div class="description">
+              <p style="font-weight: 700;">Tiltle</p>
+              <p>Description</p>
+            </div>
+          </div>
+        </div>
+        <div class="thumb">
+          <div class="thumbnail">
+            <img src="assets/epicode_thumb.png" alt="thumbnail">
+          </div>
+          <div class="bottom-thumb">
+            <div class="simbol">
+              <img src="assets/epicode-logo.png" alt="logo">
+            </div>
+            <div class="description">
+              <p style="font-weight: 700;">Tiltle</p>
+              <p>Description</p>
+            </div>
+          </div>
+        </div>
+        <div class="thumb">
+          <div class="thumbnail">
+            <img src="assets/epicode_thumb.png" alt="thumbnail">
+          </div>
+          <div class="bottom-thumb">
+            <div class="simbol">
+              <img src="assets/epicode-logo.png" alt="logo">
+            </div>
+            <div class="description">
+              <p style="font-weight: 700;">Tiltle</p>
+              <p>Description</p>
+            </div>
+          </div>
+        </div>
+        <div class="thumb">
+          <div class="thumbnail">
+            <img src="assets/epicode_thumb.png" alt="thumbnail">
+          </div>
+          <div class="bottom-thumb">
+            <div class="simbol">
+              <img src="assets/epicode-logo.png" alt="logo">
+            </div>
+            <div class="description">
+              <p style="font-weight: 700;">Tiltle</p>
+              <p>Description</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
